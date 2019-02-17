@@ -16,11 +16,12 @@ import StateMethod.Habilitada;
 public class Cuenta_Ahorro implements ICuenta{
 
     EstadoCuenta estado;
-    String nombre;
-    
-    public Cuenta_Ahorro(String nombre) {
+
+    public Cuenta_Ahorro() {
         estado = new Congelada();
-    }  
+    }
+    
+    
     
     
     @Override
@@ -38,11 +39,6 @@ public class Cuenta_Ahorro implements ICuenta{
     @Override
     public void habilitar_cuenta() {
         estado = new Habilitada();
-    }
-
-    @Override
-    public String nombre_cuenta() {
-        return nombre;
     }
     
 }

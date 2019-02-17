@@ -16,12 +16,12 @@ import StateMethod.Habilitada;
 public class Cuenta_Monetaria implements ICuenta{
 
     EstadoCuenta estado;
-    String nombre;
 
-    public Cuenta_Monetaria(String nombre) {
+    public Cuenta_Monetaria() {
         estado = new Habilitada();
-        this.nombre = nombre;
-    }    
+    }
+    
+    
     
     
     @Override
@@ -39,11 +39,6 @@ public class Cuenta_Monetaria implements ICuenta{
     @Override
     public void habilitar_cuenta() {
         estado = new Habilitada();
-    }
-
-    @Override
-    public String nombre_cuenta() {
-        return nombre;
     }
     
 }
