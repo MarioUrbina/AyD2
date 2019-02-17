@@ -10,7 +10,6 @@ package designpattern.FactoryMethod;
  * @author Daniel
  */
 public interface ICuenta {
-        
     public boolean transferir(String num_cuenta, double monto);
     
     
@@ -21,5 +20,7 @@ public interface ICuenta {
     public void congelar_cuenta();
     
     public void habilitar_cuenta();
+    
+    public String nombre_cuenta();
     
 }
