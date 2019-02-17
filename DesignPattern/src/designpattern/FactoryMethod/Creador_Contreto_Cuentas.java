@@ -5,6 +5,8 @@
  */
 package designpattern.FactoryMethod;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Daniel
@@ -21,10 +23,12 @@ public class Creador_Contreto_Cuentas extends CreadorCuentas{
             
             case AHORRO:
                 cuenta_creada = new Cuenta_Ahorro(nombre);
+                JOptionPane.showMessageDialog(null, "Se a creado la cuenta: " + nombre + "\nTipo: AHORRO");
                 break;
                 
             case MONETARIA:
                 cuenta_creada = new Cuenta_Monetaria(nombre);
+                JOptionPane.showMessageDialog(null, "Se a creado la cuenta: " + nombre + "\nTipo: MONETARIA");
                 break;
             
             default:

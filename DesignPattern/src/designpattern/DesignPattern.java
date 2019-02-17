@@ -22,13 +22,17 @@ public class DesignPattern {
         // TODO code application logic here
         
         
-        /*CreadorCuentas creador = new Creador_Contreto_Cuentas();
+        CreadorCuentas creador = new Creador_Contreto_Cuentas();
         
-        ICuenta cuenta_monetaria = creador.crear_cuenta(CreadorCuentas.Tipo.MONETARIA);
+        ICuenta cuenta_monetaria = creador.crear_cuenta("1",CreadorCuentas.Tipo.MONETARIA);
         
-        ICuenta cuenta_ahorro = creador.crear_cuenta(CreadorCuentas.Tipo.AHORRO);
+        ICuenta cuenta_ahorro = creador.crear_cuenta("2",CreadorCuentas.Tipo.AHORRO);
         
-        cuenta_monetaria.transferir("100001", 101010);
+        Transferencias t = new Transferencias(cuenta_monetaria);
+        
+        t.show();
+        
+        /*cuenta_monetaria.transferir("100001", 101010);
         
         cuenta_ahorro.transferir("737373", 102939);*/
         

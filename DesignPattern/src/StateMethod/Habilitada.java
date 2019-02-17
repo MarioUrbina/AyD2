@@ -6,6 +6,7 @@
 package StateMethod;
 
 import designpattern.FactoryMethod.ICuenta;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,7 +16,8 @@ public class Habilitada implements EstadoCuenta{
 
     @Override
     public void Transferir(ICuenta cuenta) {
-        System.out.println("Transacción exitosa, habilitada!");
+        //System.out.println("Transacción exitosa, habilitada!");
+        JOptionPane.showMessageDialog(null, "La transaccion ha terminado de forma exitosa");
     }
     
 }

@@ -6,6 +6,7 @@
 package StateMethod;
 
 import designpattern.FactoryMethod.ICuenta;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,7 +16,9 @@ public class Congelada implements EstadoCuenta{
 
     @Override
     public void Transferir(ICuenta cuenta) {
-        System.out.println("Transacción denegada, congelada!");
+        //System.out.println("Transacción denegada, congelada!");
+        JOptionPane.showMessageDialog(null, "Su transaccion ha sido denegada,por lo que hemos congelado su cuenta");
+
     }
     
 }

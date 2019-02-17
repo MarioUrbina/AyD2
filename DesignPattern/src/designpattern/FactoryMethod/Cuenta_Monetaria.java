@@ -8,6 +8,7 @@ package designpattern.FactoryMethod;
 import StateMethod.Congelada;
 import StateMethod.EstadoCuenta;
 import StateMethod.Habilitada;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -26,7 +27,7 @@ public class Cuenta_Monetaria implements ICuenta{
     
     @Override
     public boolean transferir(String num_cuenta, double monto) {
-        System.out.println("La transferencia se realiza desde una cuenta de monetaria...");
+        JOptionPane.showMessageDialog(null, "La transferencia se realiza desde una cuenta de ahorro...");
         estado.Transferir(this);
         return true;   
     }
