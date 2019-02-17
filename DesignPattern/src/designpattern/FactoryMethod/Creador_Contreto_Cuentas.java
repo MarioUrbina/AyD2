@@ -9,13 +9,10 @@ package designpattern.FactoryMethod;
  *
  * @author Daniel
  */
-public class Creador_Contreto_Cuentas extends CreadorCuentas{
-    
-    
-    
+public class Creador_Contreto_Cuentas extends CreadorCuentas{    
     
     @Override
-    public ICuenta crear_cuenta(Tipo tipo_cuenta) {
+    public ICuenta crear_cuenta(String nombre,Tipo tipo_cuenta) {
         
         ICuenta cuenta_creada;
         
@@ -23,11 +20,11 @@ public class Creador_Contreto_Cuentas extends CreadorCuentas{
         switch( tipo_cuenta ){
             
             case AHORRO:
-                cuenta_creada = new Cuenta_Ahorro();
+                cuenta_creada = new Cuenta_Ahorro(nombre);
                 break;
                 
             case MONETARIA:
-                cuenta_creada = new Cuenta_Monetaria();
+                cuenta_creada = new Cuenta_Monetaria(nombre);
                 break;
             
             default:

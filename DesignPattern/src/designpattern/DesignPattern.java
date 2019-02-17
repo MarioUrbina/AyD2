@@ -22,7 +22,7 @@ public class DesignPattern {
         // TODO code application logic here
         
         
-        CreadorCuentas creador = new Creador_Contreto_Cuentas();
+        /*CreadorCuentas creador = new Creador_Contreto_Cuentas();
         
         ICuenta cuenta_monetaria = creador.crear_cuenta(CreadorCuentas.Tipo.MONETARIA);
         
@@ -30,7 +30,7 @@ public class DesignPattern {
         
         cuenta_monetaria.transferir("100001", 101010);
         
-        cuenta_ahorro.transferir("737373", 102939);
+        cuenta_ahorro.transferir("737373", 102939);*/
         
     }
     

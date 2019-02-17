@@ -10,11 +10,14 @@ package designpattern.FactoryMethod;
  * @author Daniel
  */
 public abstract class CreadorCuentas {
+
+    
         public static enum Tipo{
             MONETARIA,
             AHORRO
         };
+        
 
-        public abstract ICuenta crear_cuenta(Tipo tipo_cuenta);
+        public abstract ICuenta crear_cuenta(String nombre,Tipo tipo_cuenta);
                
 }
